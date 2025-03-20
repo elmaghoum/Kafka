@@ -32,8 +32,6 @@ TOTAL cumulatif depuis le début :
 Messages totaux : 500543
 Durée totale cumulée réelle (s) : 7.854
 ====================================
-
-
 Cons2 :
 ====== Fin de la consommation courante ======
 Messages consommés cette session : 499324
@@ -46,11 +44,9 @@ Durée totale cumulée réelle (s) : 7.856
 
 
 
+
+
 TEMPS DE CONSOMATION  de 1000 msg: 
-Cons1 :
-
-
-Cons2 :
 
 
 
@@ -59,9 +55,25 @@ Avec 2 Prod 3 Cons / avec les consommateurs dans un même groupe
 
 TEMPS DE CONSOMATION de 1000 
 Cons1 :
+====== Fin de la consommation courante ======
+Messages consommés cette session : 497
+Durée réelle de cette session (s) : 0.107
+---------------------------------------------
+TOTAL cumulatif depuis le début : 
+Messages totaux : 497
+Durée totale cumulée réelle (s) : 0.107
+====================================
 
 
 Cons2 :
+====== Fin de la consommation courante ======
+Messages consommés cette session : 500
+Durée réelle de cette session (s) : 0.109
+---------------------------------------------
+TOTAL cumulatif depuis le début : 
+Messages totaux : 500
+Durée totale cumulée réelle (s) : 0.109
+====================================
 
 
 Cons3: ne recois rien
@@ -76,6 +88,14 @@ Cons2 :
 
 
 Cons3: ne recois rien
+
+
+
+
+
+
+
+
 
 4) 2 Prod 3 Cons / avec des consommateurs de différents groupes
 -> Tout les Cons consomme les messages
