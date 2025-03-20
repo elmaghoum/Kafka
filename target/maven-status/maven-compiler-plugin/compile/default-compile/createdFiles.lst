@@ -1,0 +1,5 @@
+MADM/kafka/ConsMain.class
+MADM/kafka/ProdMain.class
+MADM/kafka/Producteur.class
+MADM/kafka/CustomPartitioner.class
+MADM/kafka/Consommateur.class
