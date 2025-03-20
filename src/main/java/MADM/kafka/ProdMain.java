@@ -4,7 +4,7 @@ public class ProdMain {
     public static void main(String[] args) {
         System.out.println("Hello prod!");
 
-        int message = 1000;
+        int message = 1000000;
         int numberOfProducers = 2;
 
 
