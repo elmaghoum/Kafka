@@ -9,9 +9,14 @@ public class Consommateur {
     private static final String BOOTSTRAP_SERVERS = "localhost:9092";
 
     public static void runConsumer() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Saisir le nom du groupe: ");
+        String groupe = scanner.nextLine();
+        scanner.close();
+
         Properties props = new Properties();
         props.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVERS);
-        props.setProperty(ConsumerConfig.GROUP_ID_CONFIG, "test3");
+        props.setProperty(ConsumerConfig.GROUP_ID_CONFIG, groupe);
         props.setProperty(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, "false");
         props.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringDeserializer");
         props.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringDeserializer");
@@ -30,7 +35,7 @@ public class Consommateur {
         long sessionPollDuration = 0;
         long sessionMessages = 0;
         long sessionStartTime = 0;
-long totalDuration = 0;
+        long totalDuration = 0;
 
 
         boolean totauxAffiches = false;

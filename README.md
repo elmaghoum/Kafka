@@ -98,4 +98,5 @@ Cons3: ne recois rien
 
 
 4) 2 Prod 3 Cons / avec des consommateurs de différents groupes
--> Tout les Cons consomme les messages
+-> Tout les Cons consomme les messages si leur groupes ne depasse pas 2 (soit le nombre de partition)
+
